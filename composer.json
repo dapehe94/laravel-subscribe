@@ -62,5 +62,7 @@
         "test": "Run all tests.",
         "check-style": "Run style checks (only dry run - no fixing!).",
         "fix-style": "Run style checks and fix violations."
-    } 
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true     
 }
