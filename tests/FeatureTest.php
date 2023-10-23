@@ -3,8 +3,8 @@
 namespace Tests;
 
 use Illuminate\Support\Facades\Event;
-use Overtrue\LaravelSubscribe\Events\Subscribed;
-use Overtrue\LaravelSubscribe\Events\Unsubscribed;
+use Dapehe94\LaravelSubscribe\Events\Subscribed;
+use Dapehe94\LaravelSubscribe\Events\Unsubscribed;
 
 /**
  * Class FeatureTest.

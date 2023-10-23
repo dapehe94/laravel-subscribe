@@ -3,8 +3,8 @@
 namespace Tests;
 
 use Illuminate\Database\Eloquent\Model;
-use Overtrue\LaravelSubscribe\Traits\Subscribable;
-use Overtrue\LaravelSubscribe\Traits\Subscriber;
+use Dapehe94\LaravelSubscribe\Traits\Subscribable;
+use Dapehe94\LaravelSubscribe\Traits\Subscriber;
 
 class User extends Model
 {

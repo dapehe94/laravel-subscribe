@@ -3,7 +3,7 @@
 namespace Tests;
 
 use Illuminate\Database\Eloquent\Model;
-use Overtrue\LaravelSubscribe\Traits\Subscribable;
+use Dapehe94\LaravelSubscribe\Traits\Subscribable;
 
 class Book extends Model
 {

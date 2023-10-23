@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Overtrue\LaravelSubscribe\SubscribeServiceProvider;
+use Dapehe94\LaravelSubscribe\SubscribeServiceProvider;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
