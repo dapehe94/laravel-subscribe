@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dapehe94\\LaravelSubscribe\\": "src"
+            "Dapehe94\\LaravelSubscribe\\": "src/"
         }
     },
     "autoload-dev": {
