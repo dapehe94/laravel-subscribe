@@ -41,13 +41,7 @@
             ],
             "post-merge": "composer install"
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/dapehe94/laravel-subscribe"
-        }
-    ],    
+    },    
     "scripts": {
         "post-update-cmd": [
             "cghooks remove",
