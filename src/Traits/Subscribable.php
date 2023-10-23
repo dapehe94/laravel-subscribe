@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\LaravelSubscribe\Traits;
+namespace Dapehe94\LaravelSubscribe\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 

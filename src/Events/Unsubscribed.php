@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\LaravelSubscribe\Events;
+namespace Dapehe94\LaravelSubscribe\Events;
 
 class Unsubscribed extends Event
 {

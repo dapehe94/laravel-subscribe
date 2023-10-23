@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\LaravelSubscribe\Traits;
+namespace Dapehe94\LaravelSubscribe\Traits;
 
 use Illuminate\Contracts\Pagination\CursorPaginator;
 use Illuminate\Contracts\Pagination\Paginator;
@@ -16,7 +16,7 @@ trait Subscriber
 {
     public function subscribe(Model $object)
     {
-        /* @var \Overtrue\LaravelSubscribe\Traits\Subscribable|Model $object */
+        /* @var \Dapehe94\LaravelSubscribe\Traits\Subscribable|Model $object */
         if (! $this->hasSubscribed($object)) {
             $subscribe = app(config('subscribe.subscription_model'));
             $subscribe->{config('subscribe.user_foreign_key')} = $this->getKey();
@@ -32,7 +32,7 @@ trait Subscriber
      */
     public function unsubscribe(Model $object)
     {
-        /* @var \Overtrue\LaravelSubscribe\Traits\Subscribable|Model $object */
+        /* @var \Dapehe94\LaravelSubscribe\Traits\Subscribable|Model $object */
         $relation = $this->subscriptions()
             ->where('subscribable_id', $object->getKey())
             ->where('subscribable_type', $object->getMorphClass())

@@ -1,12 +1,12 @@
 <?php
 
-namespace Overtrue\LaravelSubscribe;
+namespace Dapehe94\LaravelSubscribe;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Overtrue\LaravelSubscribe\Events\Subscribed;
-use Overtrue\LaravelSubscribe\Events\Unsubscribed;
+use Dapehe94\LaravelSubscribe\Events\Subscribed;
+use Dapehe94\LaravelSubscribe\Events\Unsubscribed;
 
 /**
  * @property \Illuminate\Database\Eloquent\Model $user

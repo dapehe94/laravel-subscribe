@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\LaravelSubscribe;
+namespace Dapehe94\LaravelSubscribe;
 
 use Illuminate\Support\ServiceProvider;
 

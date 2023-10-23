@@ -1,13 +1,13 @@
 <?php
 
-namespace Overtrue\LaravelSubscribe\Events;
+namespace Dapehe94\LaravelSubscribe\Events;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Event
 {
     /**
-     * @var \Illuminate\Database\Eloquent\Model|\Overtrue\LaravelSubscribe\Subscribes
+     * @var \Illuminate\Database\Eloquent\Model|\Dapehe94\LaravelSubscribe\Subscribes
      */
     public $subscribes;
 
