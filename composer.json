@@ -1,10 +1,10 @@
 {
-    "name": "overtrue/laravel-subscribe",
+    "name": "dapehe94/laravel-subscribe",
     "description": "User Subscribe/Unsubscribe features for Laravel Application.",
     "license": "MIT",
     "authors": [
         {
-            "name": "overtrue",
+            "name": "dapehe94",
             "email": "anzhengchao@gmail.com"
         }
     ],
