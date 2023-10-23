@@ -2,6 +2,7 @@
     "name": "dapehe94/laravel-subscribe",
     "description": "User Subscribe/Unsubscribe features for Laravel Application.",
     "license": "MIT",
+    "version": "4.2.1",
     "authors": [
         {
             "name": "dapehe94",
