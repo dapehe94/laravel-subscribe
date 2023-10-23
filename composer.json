@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Overtrue\\LaravelSubscribe\\": "src"
+            "Dapehe94\\LaravelSubscribe\\": "src"
         }
     },
     "autoload-dev": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Overtrue\\LaravelSubscribe\\SubscribeServiceProvider"
+                "Dapehe94\\LaravelSubscribe\\SubscribeServiceProvider"
             ]
         },
         "hooks": {
@@ -63,5 +63,6 @@
         "check-style": "Run style checks (only dry run - no fixing!).",
         "fix-style": "Run style checks and fix violations."
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true     
 }
