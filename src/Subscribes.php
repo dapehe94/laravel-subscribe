@@ -13,7 +13,7 @@ use Overtrue\LaravelSubscribe\Events\Unsubscribed;
  * @property \Illuminate\Database\Eloquent\Model $subscriber
  * @property \Illuminate\Database\Eloquent\Model $subscribable
  */
-class Subscription extends Model
+class Subscribes extends Model
 {
     protected $guarded = [];
 
@@ -33,12 +33,12 @@ class Subscription extends Model
     {
         parent::boot();
 
-        self::saving(function (Subscription $subscription) {
+        self::saving(function (Subscribes $subscribes) {
             $userForeignKey = \config('subscribe.user_foreign_key');
-            $subscription->{$userForeignKey} = $subscription->{$userForeignKey} ?: auth()->id();
+            $subscribes->{$userForeignKey} = $subscribes->{$userForeignKey} ?: auth()->id();
 
             if (\config('subscribe.uuids')) {
-                $subscription->{$subscription->getKeyName()} = $subscription->{$subscription->getKeyName()} ?: (string) Str::orderedUuid();
+                $subscribes->{$subscribes->getKeyName()} = $subscribes->{$subscribes->getKeyName()} ?: (string) Str::orderedUuid();
             }
         });
     }

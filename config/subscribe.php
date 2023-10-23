@@ -14,10 +14,10 @@ return [
     /*
      * Table name for subscriptions records.
      */
-    'subscriptions_table' => 'subscriptions',
+    'subscriptions_table' => 'subscribes',
 
     /*
      * Model name for Subscribe record.
      */
-    'subscription_model' => \Overtrue\LaravelSubscribe\Subscription::class,
+    'subscription_model' => \Overtrue\LaravelSubscribe\Subscribes::class,
 ];

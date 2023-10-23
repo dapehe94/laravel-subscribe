@@ -7,15 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Event
 {
     /**
-     * @var \Illuminate\Database\Eloquent\Model|\Overtrue\LaravelSubscribe\Subscription
+     * @var \Illuminate\Database\Eloquent\Model|\Overtrue\LaravelSubscribe\Subscribes
      */
-    public $subscription;
+    public $subscribes;
 
     /**
      * Event constructor.
      */
-    public function __construct(Model $subscription)
+    public function __construct(Model $subscribes)
     {
-        $this->subscription = $subscription->refresh();
+        $this->subscribes = $subscribes->refresh();
     }
 }
