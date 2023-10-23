@@ -10,7 +10,8 @@
         }
     ],
     "require": {
-        "laravel/framework": "^9.0|^10.0"
+        "laravel/framework": "^9.0|^10.0",
+        "dapehe94/laravel-subscribe": "^4.2"
     },
     "autoload": {
         "psr-4": {
@@ -64,5 +65,6 @@
         "check-style": "Run style checks (only dry run - no fixing!).",
         "fix-style": "Run style checks and fix violations."
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
