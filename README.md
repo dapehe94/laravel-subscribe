@@ -1,7 +1,10 @@
 Laravel Subscribe
 ---
 
-:email: User subscribe/unsubscribe feature for Laravel Application.
+:email: User subscribe/unsubscribe feature for Laravel Application. This fork solves a Laravel Cashier Trait class name conflict:
+```shell
+Trait method Overtrue\LaravelSubscribe\Traits\Subscriber::subscriptions has not been applied as App\Models\User::subscriptions, because of collision with Laravel\Cashier\Billable::subscriptions
+```
 
 ## Installing
 
