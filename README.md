@@ -3,15 +3,10 @@ Laravel Subscribe
 
 :email: User subscribe/unsubscribe feature for Laravel Application.
 
-![CI](https://github.com/overtrue/laravel-subscribe/workflows/CI/badge.svg)
-
-
-[![Sponsor me](https://github.com/overtrue/overtrue/blob/master/sponsor-me-button-s.svg?raw=true)](https://github.com/sponsors/overtrue)
-
 ## Installing
 
 ```shell
-$ composer require overtrue/laravel-subscribe -vvv
+$ composer require dapehe94/laravel-subscribe -vvv
 ```
 
 ### Configuration
