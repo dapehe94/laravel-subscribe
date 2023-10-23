@@ -10,8 +10,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "^9.0|^10.0",
-        "dapehe94/laravel-subscribe": "^4.2"
+        "laravel/framework": "^9.0|^10.0"
     },
     "autoload": {
         "psr-4": {
