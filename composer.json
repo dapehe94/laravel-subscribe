@@ -1,6 +1,7 @@
 {
     "name": "dapehe94/laravel-subscribe",
     "description": "User Subscribe/Unsubscribe features for Laravel Application.",
+    "homepage" : "https://github.com/dapehe94/laravel-subscribe",
     "license": "MIT",
     "authors": [
         {
