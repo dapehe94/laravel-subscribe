@@ -2,11 +2,10 @@
     "name": "dapehe94/laravel-subscribe",
     "description": "User Subscribe/Unsubscribe features for Laravel Application.",
     "license": "MIT",
-    "version": "4.2.1",
     "authors": [
         {
             "name": "dapehe94",
-            "email": "anzhengchao@gmail.com"
+            "email": "dapehe94@gmail.com"
         }
     ],
     "require": {
@@ -43,6 +42,12 @@
             "post-merge": "composer install"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/dapehe94/laravel-subscribe"
+        }
+    ],    
     "scripts": {
         "post-update-cmd": [
             "cghooks remove",
@@ -63,7 +68,5 @@
         "test": "Run all tests.",
         "check-style": "Run style checks (only dry run - no fixing!).",
         "fix-style": "Run style checks and fix violations."
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true     
+    } 
 }
