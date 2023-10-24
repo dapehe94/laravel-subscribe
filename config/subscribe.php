@@ -19,5 +19,5 @@ return [
     /*
      * Model name for Subscribe record.
      */
-    'subscription_model' => \Overtrue\LaravelSubscribe\Subscribes::class,
+    'subscription_model' => \Dapehe94\LaravelSubscribe\Subscribes::class,
 ];
