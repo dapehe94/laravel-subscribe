@@ -10,7 +10,7 @@ use Illuminate\Support\Enumerable;
 use Illuminate\Support\LazyCollection;
 
 /**
- * @property \Illuminate\Database\Eloquent\Collection $subscriptions
+ * @property \Illuminate\Database\Eloquent\Collection $subscribes
  */
 trait Subscriber
 {
@@ -23,7 +23,7 @@ trait Subscriber
             $subscribe->subscribable_id = $object->getKey();
             $subscribe->subscribable_type = $object->getMorphClass();
 
-            $this->subscriptions()->save($subscribe);
+            $this->subscribes()->save($subscribe);
         }
     }
 
@@ -33,7 +33,7 @@ trait Subscriber
     public function unsubscribe(Model $object)
     {
         /* @var \Dapehe94\LaravelSubscribe\Traits\Subscribable|Model $object */
-        $relation = $this->subscriptions()
+        $relation = $this->subscribes()
             ->where('subscribable_id', $object->getKey())
             ->where('subscribable_type', $object->getMorphClass())
             ->where(config('subscribe.user_foreign_key'), $this->getKey())
@@ -54,7 +54,7 @@ trait Subscriber
 
     public function hasSubscribed(Model $object): bool
     {
-        return tap($this->relationLoaded('subscriptions') ? $this->subscriptions : $this->subscriptions())
+        return tap($this->relationLoaded('subscribes') ? $this->subscribes : $this->subscribes())
                 ->where('subscribable_id', $object->getKey())
                 ->where('subscribable_type', $object->getMorphClass())
                 ->count() > 0;
@@ -86,7 +86,7 @@ trait Subscriber
 
         \abort_if(! ($subscribables instanceof Enumerable), 422, 'Invalid $subscribables type.');
 
-        $subscribed = $this->subscriptions()->get();
+        $subscribed = $this->subscribes()->get();
 
         $subscribables->map(
             function ($subscribable) use ($subscribed, $resolver) {
@@ -107,7 +107,7 @@ trait Subscriber
         return $returnFirst ? $subscribables->first() : $subscribables;
     }
 
-    public function subscriptions(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function subscribes(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(config('subscribe.subscription_model'), config('subscribe.user_foreign_key'), $this->getKeyName());
     }
